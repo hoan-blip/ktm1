@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class ten_cannang {
+            constructor(ten, can_nang){
+                this.ten      = ten;
+                this.can_nang = can_nang;
+            }
+            setname(newten){
+                this.ten = newten;
+            } 
+            setcannang(newcan_nang){
+                this.can_nang = newcan_nang;
+            }
+            getname(){
+                return this.ten;
+            }
+            getcannang(){
+                return this.can_nang;
+            }
+            toString(){
+                document.write(` ${this.ten} có cân nặng là ${this.can_nang} kg. <br> `)
+            }
+        }
+        var objten_cannang_no1 = new ten_cannang ('Elephant', 45,6);
+        objten_cannang_no1.toString();
+        var objten_cannang_no2 = new ten_cannang ('Chicken', 100);
+        objten_cannang_no2.setname('Mouse')
+        objten_cannang_no2.toString();
+    </script>
+</body>
+</html>
